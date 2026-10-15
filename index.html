@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 반 방명록</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Pretendard", "Malgun Gothic", sans-serif;
+      background: #f5f7fb;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #3b5bdb;
+      margin-bottom: 32px;
+    }
+
+    .cards {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card .name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #3b5bdb;
+      margin-bottom: 8px;
+    }
+
+    .card .message {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>우리 반 방명록</h1>
+
+  <section class="cards">
+    <article class="card">
+      <p class="name">김민준</p>
+      <p class="message">올해도 다들 즐겁게 지내자! 😊</p>
+    </article>
+    <article class="card">
+      <p class="name">이서연</p>
+      <p class="message">우리 반 최고! 체육대회 꼭 우승하자 🏆</p>
+    </article>
+    <article class="card">
+      <p class="name">박지호</p>
+      <p class="message">모두 시험 공부 화이팅이야 📚</p>
+    </article>
+    <article class="card">
+      <p class="name">최하은</p>
+      <p class="message">같은 반이 되어서 정말 반가워요!</p>
+    </article>
+  </section>
+</body>
+</html>
